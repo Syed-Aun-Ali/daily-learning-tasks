@@ -1,0 +1,8 @@
+h1 { color: #d2092a; }                       
+.form-box { background-color: white; }        
+#email { border: 2px solid #d2092a; }         
+h1, legend { font-family: Arial, sans-serif; }  
+form label { font-weight: bold; }             
+input[type="email"] { border-color: blue; }  
+button:hover { background-color: #a80722; }   
+input:focus { outline: 3px solid #d2092a; }
