@@ -1,0 +1,304 @@
+/* Pure Page ki fonts aur styles fix karne ke liye */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6; /* Halka gray background pure page ke liye */
+}
+
+
+.header {
+    background-color: #1e293b; 
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+#top {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center; 
+    color: #ffffff; 
+}
+
+
+#top h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    color: #ffffff; 
+}
+
+
+#top p {
+    font-size: 1.1rem;
+    color: #94a3b8; 
+    margin-bottom: 20px;
+}
+
+
+nav ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    justify-content: center;
+    gap: 25px; 
+}
+
+
+nav ul li a {
+    color: #ffffff; 
+    text-decoration: none; 
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease; 
+}
+
+nav ul li a:hover {
+    color: #e05b32; 
+}
+
+.about {
+    max-width: 800px;
+    margin: 40px auto;        
+    padding: 30px;
+    background-color: #ffffff; 
+    border-radius: 12px;       
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); 
+}
+
+.about h2 {
+    color: #1e293b;            
+    font-size: 2rem;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.about h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color:rgb(165, 42, 42);
+    margin: 8px auto 0 auto;
+    border-radius: 2px;
+}
+
+.about img {
+    display: block;
+    margin: 0 auto 20px auto;  
+    border-radius: 50%;        
+    object-fit: cover;        
+    background-color: #d10707bd; 
+    width: 180px;             
+    height: 180px;             
+}
+
+.about p {
+    color: #475569;            
+    line-height: 1.8;         
+    max-width: 600px;
+    margin: 0 auto;            
+}
+
+.about p strong {
+    color: #1e293b;
+}
+
+.about p em {
+    color: rgb(165, 42, 42);           
+    font-style: normal;
+    font-weight: 600;
+}
+
+
+#about h2 {
+    color: rgb(165, 42, 42);
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;                          
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #faf9f5;
+    color: #151410;
+    line-height: 1.6;                   
+}
+
+
+header {
+    background-color: #151410;
+    color: white;
+    padding: 2rem 1rem;                 
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 0.25rem 0 0;                
+    color: #d9d2c3;
+}
+
+
+nav ul {
+    display: flex;                      
+    justify-content: center;            
+    gap: 1.5rem;                        
+    list-style: none;                   
+    padding: 0;
+    margin: 1.25rem 0 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;            
+    padding: 0.25rem 0.5rem;
+    border-bottom: 2px solid transparent;   
+}
+
+nav a:hover {
+    border-bottom-color: #d2092a;      
+}
+
+
+main {
+    max-width: 50rem;                   
+    margin: 0 auto;                     
+    padding: 2rem 1rem 1rem;           
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #d9d2c3;      
+    margin: 2rem 0;
+}
+
+h2 {
+    color: #d2092a;
+    margin-top: 0;
+}
+
+
+#about img {
+    display: block;                     
+    width: 9rem;
+    height: 9rem;
+    object-fit: cover;                 
+    border-radius: 50%;                 
+    border: 4px solid #d2092a;
+    margin-bottom: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;          
+}
+
+caption {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+th,
+td {
+    padding: 0.75rem;                   
+    border: 1px solid #d9d2c3;
+    text-align: left;
+}
+
+th {
+    background-color: #151410;
+    color: white;
+}
+
+tbody tr:nth-child(even) {              
+    background-color: #f3efe4;
+}
+
+
+ol {
+    padding-left: 1.5rem;
+}
+
+.cards {
+    display: flex;                      
+    gap: 1rem;                        
+    flex-wrap: wrap;                    
+}
+
+.card {
+    flex: 1 1 14rem;                    
+    padding: 1.25rem;                   
+    border: 1px solid #d9d2c3;
+    border-top: 4px solid #d2092a;     
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card figure {
+    margin: 0 0 1rem;                   
+}
+
+.card img {
+    display: block;
+    width: 100%;                        
+    height: auto;                       
+}
+
+.card figcaption {
+    font-size: 0.85rem;
+    color: #6b655c;
+    margin-top: 0.35rem;
+}
+
+.card a {
+    color: #d2092a;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact li {
+    padding: 0.4rem 0;
+}
+
+#contact a {
+    color: #d2092a;
+}
+
+
+footer {
+    background-color: #f3efe4;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+}
