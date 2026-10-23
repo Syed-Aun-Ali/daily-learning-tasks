@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <section class="form-box">
+      <h1>Create Account</h1>
+      <form action="#" method="post">
+ 
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname">
+ 
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+ 
+        <label for="pass">Password</label>
+        <input type="password" id="pass" name="password">
+ 
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone">
+ 
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age">
+ 
+        <fieldset>
+          <legend>Gender</legend>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label>
+        </fieldset>
+ 
+        <label for="city">City</label>
+        <select id="city" name="city">
+          <option value="">-- Select city --</option>
+          <option value="karachi">Karachi</option>
+          <option value="lahore">Lahore</option>
+        </select>
+ 
+        <label for="bio">About You</label>
+        <textarea id="bio" name="bio" rows="4"></textarea>
+ 
+        <div class="terms">
+          <input type="checkbox" id="terms" name="terms">
+          <label for="terms">I accept the terms</label>
+        </div>
+ 
+        <button type="submit">Register</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
+ 

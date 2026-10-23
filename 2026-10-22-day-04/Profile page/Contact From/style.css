@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+ 
+body {
+    margin: 0;                          
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3efe4;          
+    color: #151410;
+}
+ 
+.form-box {
+    max-width: 30rem;                   
+    width: 90%;                         
+    margin: 2rem auto;                  
+    padding: 2rem;                     
+    background-color: white;
+    border-top: 5px solid #d2092a;      
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+ 
+h1 {
+    margin-top: 0;
+    text-align: center;
+    color: #d2092a;
+}
+ 
+label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: bold;
+}
+ 
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.6rem;
+    margin-bottom: 1rem;                
+    border: 1px solid #c9c1b2;
+    border-radius: 4px;                 
+    font-size: 1rem;
+    font-family: inherit;              
+}
+ 
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid #d2092a;
+}
+
+fieldset {
+    border: 1px solid #d9d2c3;
+    padding: 1rem;
+    margin: 0 0 1rem;
+}
+ 
+legend {
+    font-weight: bold;
+    padding: 0 0.5rem;
+}
+ 
+fieldset label {                     
+    display: inline-block;             
+    margin-right: 1.5rem;
+    font-weight: normal;
+}
+ 
+.terms {
+    display: flex;
+    align-items: center;                
+    gap: 0.5rem;                        
+    margin-bottom: 1.25rem;
+}
+ 
+.terms label {
+    margin-bottom: 0;
+    font-weight: normal;
+}
+ 
+
+button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #d2092a;
+    color: white;
+    border: 0;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;    }                
+ 
+button:hover {
+    background-color: #a80722;          
+}
+ 
+
+
+
