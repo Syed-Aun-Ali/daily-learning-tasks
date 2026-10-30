@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syed Aun Ali | Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Is page mein koi style.css ya <style> nahi: sab kuch Bootstrap utility classes se -->
+</head>
+<body class="bg-body-tertiary">
+
+    <!-- bg-dark text-white text-center py-4 : kala background, safed text, beech mein, upar neeche jagah -->
+    <header id="top" class="bg-dark text-white text-center py-4">
+        <h1 class="mb-1">Syed Aun Ali</h1>
+        <p class="text-white-50 mb-3">Web Development Student</p>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-9">
+
+                <section id="about">
+                    <h2 class="text-danger">About Me</h2>
+                    <!-- rounded-circle = gol, border-4 = moti lakeer, d-block = alag line mein -->
+                    <img src="images/vecteezy_user-icon-on-transparent-background_19879186.png" alt="Profile photo of Syed Aun Ali"
+                         width="150" height="150" class="d-block rounded-circle border border-danger border-4 object-fit-cover mb-3">
+                    <p>
+                        I am a <strong>web development student</strong> from Karachi.
+                        I am learning <em>HTML</em>, CSS and Bootstrap.<br>
+                        My goal is to build real websites for businesses.
+                    </p>
+                </section>
+
+                <hr class="my-5">
+
+                <section id="skills">
+                    <h2 class="text-danger">Skills</h2>
+                    <!-- table-striped = ek chhor ke ek row rang, caption-top = caption upar -->
+                    <table class="table table-bordered table-striped caption-top bg-white">
+                        <caption class="fw-bold text-body">My current skills</caption>
+                        <thead class="table-dark">
+                            <tr><th scope="col">Skill</th><th scope="col">Level</th><th scope="col">Months</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>HTML</td><td>Advanced</td><td>2</td></tr>
+                            <tr><td>CSS</td><td>Advanced</td><td>1</td></tr>
+                            <tr><td>Bootstrap</td><td>Beginner</td><td>2</td></tr>
+                            <tr><td>Git &amp; GitHub</td><td>Beginner</td><td>2</td></tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <hr class="my-5">
+
+                <section id="education">
+                    <h2 class="text-danger">Education</h2>
+                    <ol>
+                        <li>Matric - 2025</li>
+                        <li>Intermediate (running)
+                            <ul>
+                                <li>Computer Science</li>
+                                <li>Web Development course</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </section>
+
+                <hr class="my-5">
+
+                <section id="projects">
+                    <h2 class="text-danger">Projects</h2>
+                    <div class="row row-cols-1 row-cols-md-3 g-3">
+                        <article class="col">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="bg-danger p-1"></div> <!-- p-1 = 0.25rem = patli laal patti -->
+                                <img src="images/Fine Packages - Google Chrome 10_21_2026 2_37_13 PM.png" class="card-img-top" alt="Screenshot of the Fine Packages home page">
+                                <div class="card-body">
+                                    <h3 class="h5 card-title">Fine Packages Clone</h3>
+                                    <p class="card-text">A responsive home page built with HTML and Bootstrap 5.</p>
+                                    <a href="https://github.com/Syed-Aun-Ali/daily-learning-tasks/tree/main/2026-10-20-day-01" target="_blank" rel="noopener noreferrer" class="link-danger fw-bold">View on GitHub</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="bg-danger p-1"></div>
+                                <div class="card-body">
+                                    <h3 class="h5 card-title">Registration Form</h3>
+                                    <p class="card-text">A sign-up form with input types and validation.</p>
+                                    <a href="#projects" class="link-danger fw-bold">View on GitHub</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="bg-danger p-1"></div>
+                                <div class="card-body">
+                                    <h3 class="h5 card-title">Profile Page</h3>
+                                    <p class="card-text">A personal page built with semantic HTML and Bootstrap utilities.</p>
+                                    <a href="#projects" class="link-danger fw-bold">View on GitHub</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <hr class="my-5">
+
+                <section id="contact">
+                    <h2 class="text-danger">Contact</h2>
+                    <ul class="list-unstyled">
+                        <li class="py-1">Email: <a class="link-danger" href="mailto:Aun@example.com">Aun@example.com</a></li>
+                        <li class="py-1">Phone: <a class="link-danger" href="tel:+923001234567">+92 300 1234567</a></li>
+                        <li class="py-1">GitHub: <a class="link-danger" href="https://github.com/Syed-Aun-Ali" target="_blank" rel="noopener noreferrer">My GitHub profile</a></li>
+                        <li class="py-1"><a class="link-danger" href="#top">Back to top</a></li>
+                    </ul>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-light text-center py-3 border-top">
+        <p class="mb-0">&copy; 2026 Syed Aun Ali</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
