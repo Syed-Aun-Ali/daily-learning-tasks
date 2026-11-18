@@ -1,0 +1,130 @@
+/* ==========================================================
+   Day 20 — Custom theme over Bootstrap 5.3
+   Bootstrap 5 exposes design tokens as CSS custom properties
+   (--bs-*). We customize without touching Sass, then fix
+   the accessibility problems Lighthouse flags.
+   ========================================================== */
+
+/* ---------- 1. Theme tokens (Bootstrap CSS variables) ---------- */
+
+:root {
+  /* Brand color, darker than Bootstrap's default #0d6efd so that
+     white text on .btn-primary passes WCAG AA (needs >= 4.5:1). */
+  --bs-primary: #0a58ca;
+  --bs-primary-rgb: 10, 88, 202;
+
+  /* A link color with sufficient contrast on white (default
+     #0d6efd is only ~4.5:1 borderline on small text). */
+  --bs-link-color: #0a58ca;
+  --bs-link-color-rgb: 10, 88, 202;
+  --bs-link-hover-color: #084298;
+
+  /* Page background + body text (dark gray on light gray, ~12:1) */
+  --bs-body-bg: #f4f6f8;
+  --bs-body-color: #212529;
+
+  /* Navbar dark background — use near-black for a stronger
+     contrast with white text (~17:1 vs. #212529 gray). */
+  --bs-dark: #16191d;
+  --bs-dark-rgb: 22, 25, 29;
+
+  /* Focus ring color, matches the new primary */
+  --bs-focus-ring-color: rgba(10, 88, 202, 0.25);
+
+  /* Slightly rounder corners as the visual theme */
+  --bs-border-radius: 0.5rem;
+  --bs-border-radius-lg: 0.75rem;
+}
+
+/* ---------- 2. Component-level overrides ---------- */
+
+/* Buttons built from the variables above */
+.btn-primary {
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-hover-bg: var(--bs-link-hover-color);
+  --bs-btn-hover-border-color: var(--bs-link-hover-color);
+  --bs-btn-active-bg: var(--bs-link-hover-color);
+  --bs-btn-active-border-color: var(--bs-link-hover-color);
+  --bs-btn-disabled-bg: var(--bs-primary);
+  --bs-btn-disabled-border-color: var(--bs-primary);
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-hover-bg: var(--bs-primary);
+  --bs-btn-hover-border-color: var(--bs-primary);
+  --bs-btn-active-bg: var(--bs-primary);
+  --bs-btn-active-border-color: var(--bs-primary);
+}
+
+/* Bootstrap's danger red #dc3545 on white is only 4.18:1 — fails AA.
+   Use a darker red (#b02a37 ≈ 6.3:1) for outline-danger text/buttons. */
+.btn-outline-danger {
+  --bs-btn-color: #b02a37;
+  --bs-btn-border-color: #b02a37;
+  --bs-btn-hover-bg: #b02a37;
+  --bs-btn-hover-border-color: #b02a37;
+  --bs-btn-active-bg: #b02a37;
+  --bs-btn-active-border-color: #b02a37;
+}
+
+/* Badges: keep status colors but raise the text contrast.
+   (Bootstrap's .text-dark on warning was fine; we harden the rest.) */
+.badge.bg-success {
+  --bs-badge-color: #ffffff;
+} /* white on green */
+.badge.bg-secondary {
+  --bs-badge-color: #ffffff;
+} /* white on gray  */
+.badge.bg-warning {
+  --bs-badge-color: #1a1a00;
+} /* near-black     */
+
+/* ---------- 3. Accessibility fixes ---------- */
+
+/* Footer: text-white-50 on bg-dark fails contrast (~4.2:1 on the
+   old dark gray). Raise it to a brighter tone (~7:1). */
+footer.bg-dark,
+.text-white-50 {
+  --bs-secondary-color: #c9ced4; /* readable "muted" text on dark bg */
+}
+footer.bg-dark .text-white-50,
+footer .text-white-50 {
+  color: #c9ced4 !important;
+}
+
+/* Visible focus indicator for keyboard users (Lighthouse checks
+   that interactive elements are reachable and visible). */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--bs-primary);
+  outline-offset: 2px;
+}
+
+/* Skip link: hidden until focused, lets keyboard users jump
+   straight to the main content (a11y best practice). */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 1100;
+  padding: 0.5rem 1rem;
+  background: var(--bs-primary);
+  color: #fff;
+  border-radius: 0 0 0.5rem 0;
+  text-decoration: none;
+}
+.skip-link:focus {
+  left: 0;
+}
+
+/* Larger minimum font size for table content readability */
+.table td,
+.table th {
+  font-size: 0.95rem;
+}
