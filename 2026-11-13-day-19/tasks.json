@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Design Login Page UI",
+    "assignedTo": "Aun MMP",
+    "status": "In Progress",
+    "dueDate": "2026-11-10"
+  },
+  {
+    "id": 2,
+    "name": "Setup Node.js Backend",
+    "assignedTo": "Asad",
+    "status": "Completed",
+    "dueDate": "2026-11-05"
+  },
+  {
+    "id": 3,
+    "name": "Database Schema Design",
+    "assignedTo": "Aun",
+    "status": "Pending",
+    "dueDate": "2026-11-15"
+  }
+]
